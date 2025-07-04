@@ -1,0 +1,20 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="CamelApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+    <envs>
+      <env name="KAFKA_ENV" value="DEV" />
+      <env name="TLS_CA_BUNDLE_JKS" value="$USER_HOME$/.pki/mm-cert-bundle.jks" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="com.mm.dmd.router.CamelApplication" />
+    <module name="data-router" />
+    <option name="PROGRAM_PARAMETERS" value="--env dev --batch-audit-id 12346 --item-store-routes-config-name hranalytics_workday_brg" />
+    <option name="VM_PARAMETERS" value="-Djavax.net.ssl.trustStore=$USER_HOME$/.pki/mm-cert-bundle.jks -Djavax.net.ssl.trustStorePassword=changeit" />
+    <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+      <option name="credential" />
+      <option name="region" />
+      <option name="useCurrentConnection" value="false" />
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
