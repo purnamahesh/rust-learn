@@ -1,5 +1,5 @@
 
-mod nursery {}
+pub mod nursery {}
 
 pub mod flowers {
     pub struct Rose {
