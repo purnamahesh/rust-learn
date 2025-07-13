@@ -8,3 +8,9 @@ rand = "^0.9.1"
 
 [profile.release]
 panic = 'abort'
+
+[workspace]
+members = [ 
+    "add_one",
+    "adder"
+]
