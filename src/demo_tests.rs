@@ -12,7 +12,7 @@
 // testing private functions using 'use super::*'
 
 
-pub struct Guess { value: u8 }
+pub struct Guess { _value: u8 }
 
 impl Guess {
     pub fn new(value:u8) -> Self {
@@ -20,7 +20,7 @@ impl Guess {
             panic!("Value should be between 1 and 100, but got {}", value)
         }
 
-        Guess { value: value }
+        Guess { _value: value }
     } 
 }
 
